@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .nav-button {
+    position: relative;
+  }
+
+  .nav-button:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+  }
+
+  .nav-button:hover {
+    color: black;
+  }
+
+  .nav-button:hover:after {
+    width: 100%;
+  }
+
+  .bg-banner1 {
+    background: linear-gradient(
+        to right,
+        rgb(0 0 0 / 84%),
+        rgb(175 12 12 / 35%)
+      ),
+      url("https://i.ibb.co/DYQR6np/download.webp");
+    background-size: cover;
+  }
+  /* .bg-banner1:hover {
+    background-size: 120%;
+  } */
+  .bg-banner2 {
+    background: linear-gradient(
+        to right,
+        rgb(0 0 0 / 84%),
+        rgb(175 180 22 / 35%)
+      ),
+      url("https://i.ibb.co/yRDqgMW/pexels-photo-291762.jpg");
+    background-size: cover;
+  }
+
+  .bg-banner3 {
+    background: linear-gradient(
+        to right,
+        rgb(0 0 0 / 84%),
+        rgb(185 185 185 / 35%)
+      ),
+      url("https://i.ibb.co/4RNKJrc/comfortable-work-pants-tout-5eee244ec0bc4c3b8b490af2460bd4c5.jpg");
+    background-size: cover;
+  }
+  .bg-about {
+    background: linear-gradient(to right, rgb(0 0 0 / 84%), rgb(12 12 12 / 35%)),
+      url("https://i.ibb.co/L9Kh2NP/retailfashion-1.jpg");
+    background-size: cover;
+  }
+  .bg-subscribe {
+    background: linear-gradient(to right, rgb(0 0 0 / 84%), rgb(16 7 7 / 35%)),
+      url("https://i.ibb.co/5rzY5Sk/360-F-596626503-jrzj-ZNYSt-Dexi-Wx-QFq-O7o-Ch6-M8-Pd-Ml-Js.jpg");
+    background-size: cover;
+  }
+  .bg-detail {
+    background: linear-gradient(to right, rgb(0 0 0 / 84%), rgb(16 7 7 / 35%)),
+      url("https://plus.unsplash.com/premium_photo-1661606021743-12feba886af0?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+  }
+
+  .bg-login {
+    background: linear-gradient(to right, rgb(0 0 0 / 84%), rgb(16 7 7 / 35%)),
+      url("https://plus.unsplash.com/premium_photo-1665664652418-91f260a84842?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+  }
+  .bg-signup {
+    background: linear-gradient(to right, rgb(0 0 0 / 84%), rgb(16 7 7 / 35%)),
+      url("https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@font-face {
+  font-family: "ClashDisplayBold";
+  src: local("ClashDisplayBold"),
+    url("./fonts/ClashDisplay-Bold.woff") format("woff"),
+    url("./fonts/ClashDisplay-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ClashDisplaySemibold";
+  src: local("ClashDisplaySemibold"),
+    url("./fonts/ClashDisplay-Semibold.woff") format("woff"),
+    url("./fonts/ClashDisplay-Semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ClashDisplayMedium";
+  src: local("ClashDisplayMedium"),
+    url("./fonts/ClashDisplay-Medium.woff") format("woff"),
+    url("./fonts/ClashDisplay-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ClashDisplayRegular";
+  src: local("ClashDisplayRegular"),
+    url("./fonts/ClashDisplay-Regular.woff") format("woff"),
+    url("./fonts/ClashDisplay-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ClashDisplayLight";
+  src: local("ClashDisplayLight"),
+    url("./fonts/ClashDisplay-Light.woff") format("woff"),
+    url("./fonts/ClashDisplay-Light.woff2") format("woff2");
+}
